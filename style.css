@@ -1,0 +1,25 @@
+.image-container {
+    overflow: hidden; /* This helps prevent horizontal overflow if images have different widths */
+    width: fit-content; /* Adjust width as needed */
+    display: flex; /* This allows horizontal positioning of images */
+  }
+
+  .image-container image {
+    margin-right: 10px; /* Add spacing between images */
+    opacity: 0; /* Hide images initially */
+    transition: opacity 1s ease-in-out; /* Smooth transition for fade effect */
+    width: fit-content;
+    height: 10px;
+  }
+
+  .image-container image.visible {
+    opacity: 1; /* Make the current image visible */
+  }
+
+  .image {
+    width: 10px;
+    height: 10px;
+  }
+
+
+  
